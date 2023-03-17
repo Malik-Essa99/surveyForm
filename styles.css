@@ -1,0 +1,124 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+
+.page{
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.page::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgb(199 181 64 / 80%), rgb(15 121 177 / 70%) ), url(assets/people.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:700px){
+    .container{
+        width: 100% !important;
+        min-width: 100% !important;
+        
+}
+}
+
+.container{
+    min-width:700px;
+        width: 700px;
+        align-items: center;
+        display: grid;
+        margin: auto;
+        gap: 10px;
+        
+}
+.header{
+    text-align: center;
+
+}
+.form{
+    padding: 30px 20px;
+    display:grid;
+    gap: 10px;
+    width: 100%;
+    border-radius: 6px;
+    
+    background-color: rgb(7 40 67 / 80%);
+
+}
+
+.input{
+    gap: 8px;
+    display: grid;
+}
+input[type="text"],input[type="Email"],input[type="number"]{
+    border-radius: 6px;
+    height: 30px;
+    border:1px solid #ffffff;
+    padding: 6px;
+
+}
+input[type="submit"]{
+    background-color: rgb(166, 217, 114);
+    height: 44px;
+    border-radius: 6px;
+    border:1px solid rgb(166, 217, 114);
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 18px;
+}
+input[type="submit"]:hover,input[type="submit"]:focus{
+    background-color: rgb(39, 211, 17);
+    border:1px solid rgb(39, 211, 17);
+    cursor: pointer;
+    transition: 0.8s;
+}
+input[type="radio"],input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+.label{
+    height: 30px;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+}
+select{
+    outline: 0;
+    height: 44px;
+    border-radius: 6px;
+    border:1px solid #ffffff;
+    padding: 6px;
+}
+textarea{
+    outline: 0;
+    border-radius: 6px;
+    border:1px solid #ffffff;
+    padding: 6px;
+}
+input:focus,input:hover{
+    outline: 0;
+    border: 1px solid #022a9a;
+}
+h1,p,label{
+    font-weight: 500;
+    color: aliceblue;
+}
+.top{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
